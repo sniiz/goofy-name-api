@@ -4,7 +4,7 @@ a jokey api that returns some goofy names.
 
 # usage
 
-TODO add public url
+url: `http://gn-api.glitch.me`
 
 ### GET
 
