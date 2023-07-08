@@ -1,0 +1,8 @@
+{
+  "name": "goofy-name-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "sniiz",
+  "license": "MIT",
+  "type": "module"
+}
