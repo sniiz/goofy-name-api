@@ -5,10 +5,12 @@
 // I'LL SHOW THEM ALL
 
 import * as fs from "fs";
-import * as path from "path";
+
+const PARENT = "."; // i don't know how to do relative imports
+// TODO figure out how to do relative imports
 
 const dictionary = JSON.parse(
-  fs.readFileSync(path.join(__dirname, "dictionary.json"), "utf8")
+  fs.readFileSync(`${PARENT}/dictionary.json`, "utf8")
 );
 const prefixes = dictionary.prefixes;
 const suffixes = dictionary.suffixes;

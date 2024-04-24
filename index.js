@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import { generateNames } from "./lib";
+import { generateNames } from "./lib.js";
 
 const app = express();
 
@@ -24,5 +24,7 @@ app.get("/gn", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`goofy name api listening on port ${PORT}`);
+  console.log(
+    `goofy name api listening on port ${PORT}\ntest example: http://localhost:${PORT}/gn?n=5&c=1`
+  );
 });
