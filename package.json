@@ -1,0 +1,12 @@
+{
+  "name": "goofy-name-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "smhaley.xyz",
+  "license": "MIT",
+  "type": "module",
+  "private": false,
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
