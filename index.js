@@ -10,13 +10,7 @@ app.use(cors());
 
 app.get("/gn", (req, res) => {
   let { n, c } = req.query;
-  n = parseInt(n || "1");
-  if (n < 1) {
-    n = 1;
-  }
-  if (n > 100) {
-    n = 100;
-  }
+  n = Math.min(100, Math.max(1, parseInt(n || "1")));
 
   c = c === "1" || c === "true";
 
